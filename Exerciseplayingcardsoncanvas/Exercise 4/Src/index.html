@@ -1,0 +1,21 @@
+<html>
+
+<head>
+   <meta charset="ISO-8859-1">
+   <title>PlayingCardsCanvas.html © Kari Laitinen</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+
+</head>
+
+<body onload="draw_on_canvas();button_to_initialize();">
+
+   <div id="centered">
+      <canvas id="playing_cards_canvas" width="910" height="564" onmouseup="on_mouse_up( event )">
+      </canvas>
+      <button onclick="button_to_deal()"> DEAL </button>
+      <button onclick="button_to_shuffle_deck_clicked()"> SHUFFLE </button>
+
+   </div>
+</body>
+</html>

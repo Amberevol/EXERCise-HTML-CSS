@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>GuessAWord.html &copy; Kari Laitinen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="centered">
+      <br />&nbsp;
+      <p>Each hyphen sign '-' below hides a letter of a word.</p>
+      <p>Try to find out the word by pressing the buttons!</p>
+    </div>
+
+    <h1 id="secret_word_text_id" class="centered">Hello!</h1>
+
+    <div class="centered" id="button_wrapper"></div>
+
+    <div class="centered">
+      <p>
+        Number of Gueses
+        <span id="number_of_gueses_text_id">0</span>
+      </p>
+      <p class="centered" id="message"></p>
+
+      <button type="button" class="centered" id="new_game">
+        Play New Game
+      </button>
+    </div>
+  </body>
+</html>

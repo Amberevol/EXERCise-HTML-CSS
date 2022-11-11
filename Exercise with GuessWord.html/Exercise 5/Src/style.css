@@ -1,0 +1,36 @@
+.centered {
+    text-align: center;
+    margin: 64px auto; /* top and bottom margins are set,
+                              right and left margins are automatic */
+  
+    font-family: monospace; /* Characters will have equal widths. */
+    font-size: 1.2rem;
+  }
+  
+  body {
+    background-color: WhiteSmoke;
+  }
+  
+  /* An <h1> element will be used to show the letters of the secret word. */
+  
+  h1 {
+    font-size: 2.8em; /* 2.8 times the normal font size. */
+    letter-spacing: 4px; /* a little more space between the letters. */
+  }
+  
+  button#char-btn {
+    width: 28px;
+    height: 36px;
+    font-size: 18px;
+    color: Blue; /* text color on the button. */
+    background-color: YellowGreen;
+  }
+  
+  button#char-btn:hover:not(:disabled)         /* When the mouse cursor is hovering over the button ... */ {
+    opacity: 0.8; /* ... the button background becomes somewhat transparent. */
+  }
+  
+  #char-btn:disabled {
+    color: White; /* text color on the button. */
+    background-color: LightGray;
+  }

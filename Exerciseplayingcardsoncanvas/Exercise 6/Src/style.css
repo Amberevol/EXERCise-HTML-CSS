@@ -1,0 +1,25 @@
+
+       body
+       {
+          background-color: #41C300 ;  /* Darkish green. */
+       }
+    
+       #centered
+       {
+          width: 910px;
+          height: 564px;
+          margin: 30px auto;    /* top and bottom margins are set
+                                   right and left margins are automatic */
+          border: 2px solid black;
+    
+          text-align: center; /* This centers the buttons etc. */
+       }
+    
+       button
+       {
+          width:  96px ;
+          height: 28px ;
+    
+          border: 2px solid black;
+          background-color: #5CFA0D ;  /* Bright green. */
+       }

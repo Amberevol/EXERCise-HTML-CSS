@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>PlayingCardsCanvas.html &copy; Kari Laitinen</title>
+    <!-- 
+   http://www.naturalprogramming.com
+
+   2014-02-13 File created.
+   2016-10-22 New JavaScript classes in use. (ECMAScript 6)
+   2017-02-19 Last modification.
+
+   With the canvas on this page the user can deal
+   cards and shuffle the card deck. The cards can be
+   turned by clicking them with the mouse.
+
+   Note that the program stops operating after all
+   cards from the deck have been taken. It is your
+   task to fix this problem when you study the code.
+
+   This program shows how to:
+      - build an application with several classes
+      - how to manage many images
+      - shuffle an array
+      
+   The images needed by this program must be in a folder
+   named playing_cards_images. In the same folder where you
+   found this file, there is a file named
+   playing_cards_images.zip. By unzipping this file you
+   get the necessary image files to work locally with this
+   page.
+-->
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body onload="initialize_game()">
+    <div id="centered">
+      <canvas
+        id="playing_cards_canvas"
+        width="910"
+        height="564"
+        onmouseup="on_mouse_up( event )"
+      >
+      </canvas>
+
+      <button onclick="button_to_deal_cards_clicked()">DEAL</button>
+      <button onclick="button_to_shuffle_deck_clicked()">SHUFFLE</button>
+    </div>
+  </body>
+</html>
